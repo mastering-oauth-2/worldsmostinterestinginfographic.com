@@ -1,0 +1,110 @@
+// Typography
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: $headings-color;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size; //48px
+  color: $blue;
+  font-weight: 300;
+  margin-bottom: 22px;
+  @include media ('<desktop') {
+    font-size: 42px;
+  }
+  @include media ('<tablet') {
+    font-size: 32px;
+  }
+}
+
+h2, .h2 {
+  font-size: $h2-font-size; //40px
+  color: $blue;
+  font-weight: 300;
+  @include media ('<desktop') {
+    font-size: 36px;
+  }
+  @include media ('<tablet') {
+    font-size: 28px;
+  }
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: $base-link-color;
+  transition: color 0.5s;
+  &:hover {
+    text-decoration: none;
+    color: #f08a4b !important;
+  }
+}
+
+.large, .number{
+  font-size: 120px;
+  display: block;
+  @include media ('<desktop') {
+    font-size: 90px;
+  }
+  @include media ('<tablet') {
+    font-size: 60px;
+  }
+}
+.thin{
+  font-weight: 100;
+}
+
+.mark{
+  font-weight: normal;
+}
+
+.medium{
+  font-weight: 500;
+}
+
+.blue{
+  color: $blue;
+}
+
+.orange{
+  color: $orange;
+}
+
+.green{
+  color: $green;
+}
+
+.blue-light{
+  color: $blue-light;
+}
+
+.black{
+  color: $black;
+}
