@@ -120,7 +120,7 @@ public enum OAuth2Utils {
 
       /*
        * Note: The addition of the "method=get" URL-encoded form parameter is necessary for the Facebook Graph APIs.
-       *       Other OAuth 2 facebook providers may not require this, and some may even reject it.
+       *       Other OAuth 2 providers may not require this, and some may even reject it.
        */
       List<NameValuePair> urlParameters = new ArrayList<>();
       urlParameters.add(new BasicNameValuePair("method", "get"));
